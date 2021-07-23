@@ -32,7 +32,6 @@ export default class Timers {
 
     if (count === -1) {
       window.clearInterval(timer.interval)
-
       this._timers = this._timers.filter((t: Timer) => t.seq !== timer.seq)
     }
   }
